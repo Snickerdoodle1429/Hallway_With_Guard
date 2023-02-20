@@ -1871,7 +1871,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d67efc688886bc74e9b958b34701ee5f, type: 3}
+  m_Script: {fileID: 11500000, guid: cd6fa68c4313c6945b2418ca8a2b0208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 964980762}
@@ -1938,7 +1938,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 964980760}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6ba5df1f92a80548bc25c60efaa7e40, type: 3}
+  m_Script: {fileID: 11500000, guid: 613749619fbeed542b6ceb60406c2655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 964980761}
