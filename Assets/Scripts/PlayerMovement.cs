@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+
+AssetPush
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float movementSpeed = 10f;
 
+ main
     public GameObject winText;
     public GameObject loseText;
 
@@ -21,6 +23,9 @@ public class PlayerMovement : MonoBehaviour
         loseText.SetActive(false);        
     }
 
+
+    // Update is called once per frame
+ AssetPush
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
@@ -29,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * horizontalInput + transform.forward * forwardInput;
 
         characterController.Move(move * Time.deltaTime * movementSpeed);
+ main
     }
 
     private void OnTriggerEnter(Collider other) {
@@ -44,5 +50,10 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("You Win!");
             winText.SetActive(true);
         }   
+
+
+
+
+ AssetPush
     }
 }
