@@ -15,8 +15,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject winText;
     public GameObject loseText;
 
-    private void Start() {
-        
+    void Start() 
+    {   
         winText.SetActive(false);
         loseText.SetActive(false);        
     }
