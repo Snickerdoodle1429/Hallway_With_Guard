@@ -23,12 +23,15 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        forwardInput = Input.GetAxis("Vertical");
+        if(PauseMenu.isPaused == false)
+        {
+            horizontalInput = Input.GetAxis("Horizontal");
+            forwardInput = Input.GetAxis("Vertical");
 
-        Vector3 move = transform.right * horizontalInput + transform.forward * forwardInput;
+            Vector3 move = transform.right * horizontalInput + transform.forward * forwardInput;
 
-        characterController.Move(move * Time.deltaTime * movementSpeed);
+            characterController.Move(move * Time.deltaTime * movementSpeed);
+        }
     }
 
     private void OnTriggerEnter(Collider other) {
