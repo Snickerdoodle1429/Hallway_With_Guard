@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenu;
 
     public static bool isPaused;
+    public bool isCursorLocked = false;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,7 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Tab))
         {
             if(isPaused)
             {
@@ -28,6 +29,10 @@ public class PauseMenu : MonoBehaviour
             {
                 pauseGame();
             }
+
+            
+Cursor.lockState = isCursorLocked ? CursorLockMode.Locked : CursorLockMode.None;
+Cursor.visible = !isCursorLocked;
         }
         
     }
