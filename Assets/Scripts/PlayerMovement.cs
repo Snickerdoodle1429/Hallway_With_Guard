@@ -46,6 +46,11 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("You Win!");
             winText.SetActive(true);
-        }   
+        }
+
+        if (other.CompareTag("Key"))
+        {
+            Object.Destroy(other);
+        }      
     }
 }

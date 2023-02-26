@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: d00a15806425567429617404cf439278
+=======
+<<<<<<< HEAD
+guid: 1f689cff0af00874a826140e1a4cc23f
+=======
+guid: d00a15806425567429617404cf439278
+>>>>>>> d0c4c802b14216314a2f20fe369e4c1b8d7b2791
+>>>>>>> Stashed changes
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -7,7 +15,15 @@ TextureImporter:
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
+<<<<<<< Updated upstream
     sRGBTexture: 0
+=======
+<<<<<<< HEAD
+    sRGBTexture: 1
+=======
+    sRGBTexture: 0
+>>>>>>> d0c4c802b14216314a2f20fe369e4c1b8d7b2791
+>>>>>>> Stashed changes
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -54,7 +70,15 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
+<<<<<<< Updated upstream
   textureType: 1
+=======
+<<<<<<< HEAD
+  textureType: 0
+=======
+  textureType: 1
+>>>>>>> d0c4c802b14216314a2f20fe369e4c1b8d7b2791
+>>>>>>> Stashed changes
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
