@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -17,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start() 
     {   
+        
         winText.SetActive(false);
         loseText.SetActive(false);        
     }
@@ -36,16 +39,29 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         
+        
         if (other.CompareTag("Enemy"))
         {
-            Debug.Log("Game Over");
-            loseText.SetActive(true);
+            //Debug.Log("Game Over");
+            //loseText.SetActive(true);
+            SetWinText();
         }
         
         if (other.CompareTag("Escape"))
         {
-            Debug.Log("You Win!");
-            winText.SetActive(true);
+            //Debug.Log("You Win!");
+            //winText.SetActive(true);
+            SetLoseText();
         }   
+    }
+
+    void SetWinText()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+        
+    void SetLoseText()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 }

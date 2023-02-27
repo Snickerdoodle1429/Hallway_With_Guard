@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Pause Menu.unity
-    guid: c4c60158549c115488fb64890845888d
+    path: Assets/Scenes/LoseScene.unity
+    guid: 0b0a5597e43f7f5478735abf6710ec94
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: 5397084f0550d5846a7b7fdb64b4c0e3
   m_configObjects: {}
