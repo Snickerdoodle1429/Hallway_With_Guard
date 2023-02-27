@@ -42,15 +42,15 @@ public class PlayerMovement : MonoBehaviour
         
         if (other.CompareTag("Enemy"))
         {
-            //Debug.Log("Game Over");
-            //loseText.SetActive(true);
+            Debug.Log("Game Over");
+            loseText.SetActive(true);
             SetWinText();
         }
         
         if (other.CompareTag("Escape"))
         {
-            //Debug.Log("You Win!");
-            //winText.SetActive(true);
+            Debug.Log("You Win!");
+            winText.SetActive(true);
             SetLoseText();
         }   
     }
