@@ -13,10 +13,17 @@ public class CameraMovement : MonoBehaviour
 
     float xRotate = 0f;
 
+    void Start() 
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        
+    }
+
     // Update is called once per frame
     void Update()
     {
-        horizontalInput = Input.GetAxis("Mouse X") * turnSpeed * 2f * Time.deltaTime;
+        horizontalInput = Input.GetAxis("Mouse X") * turnSpeed * 3f * Time.deltaTime;
         veriticalInput = Input.GetAxis("Mouse Y") * turnSpeed * Time.deltaTime;
 
         xRotate -= veriticalInput;

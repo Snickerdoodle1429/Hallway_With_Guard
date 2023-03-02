@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes 1/Hallway.unity
-    guid: 18893433477d27c4285e0d58e27691ae
+    path: Assets/Scenes/Main Menu.unity
+    guid: a56bb612bce0df94d9b2c221c9bf59d6
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Pause Menu.unity
+    guid: c4c60158549c115488fb64890845888d
   m_configObjects: {}
